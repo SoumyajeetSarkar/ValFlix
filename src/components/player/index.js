@@ -1,6 +1,7 @@
 import React, { useState, useContext, createContext } from 'react';
 import ReactDOM from 'react-dom';
 import ReactPlayer from 'react-player';
+import {HiX} from "react-icons/hi";
 import { Container, Button, Overlay, Inner, Close, HeaderButton } from './styles/player';
 
 export const PlayerContext = createContext();
@@ -21,9 +22,9 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
   return showPlayer
     ? ReactDOM.createPortal(
         <Overlay onClick={() => setShowPlayer(false)} data-testid="player">
+          <Close><HiX color="white" size={100}/></Close>
           <Inner>
             <ReactPlayer url={src} controls={true}/>
-            <Close />
           </Inner>
         </Overlay>,
         document.body

@@ -1,5 +1,6 @@
 import React, { useState, useContext, createContext } from "react";
 import { GrClose } from "react-icons/gr";
+import {HiX} from "react-icons/hi";
 import Player from "../player";
 import {
   Container,
@@ -11,7 +12,6 @@ import {
   FeatureTitle,
   FeatureText,
   FeatureClose,
-  Maturity,
   Content,
   Meta,
   Entities,
@@ -84,28 +84,22 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
 
   return showFeature ? (
     <Feature {...restProps} src={`/images/valorant-card.jpg`}>
+      <FeatureClose onClick={() => setShowFeature(false)}>
+          <HiX color="white" size={50}/>
+      </FeatureClose>
       <Content>
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
         <FeatureText>{itemFeature.description}</FeatureText>
-        <FeatureClose onClick={() => setShowFeature(false)}>
-          <GrClose size={100} />
-        </FeatureClose>
-
         <Group margin="30px 0" flexDirection="row" alignItems="center">
-          <Maturity rating={itemFeature.maturity}>
-            {itemFeature.maturity < 12 ? "PG" : itemFeature.maturity}
-          </Maturity>
           <FeatureText fontWeight="bold">
             {itemFeature.genre.charAt(0).toUpperCase() +
               itemFeature.genre.slice(1)}
           </FeatureText>
         </Group>
-
         <Player>
           <Player.Button />
           <Player.Video src={itemFeature.src} />
         </Player>
-        
       </Content>
     </Feature>
   ) : null;

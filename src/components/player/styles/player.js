@@ -12,14 +12,15 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
-  margin: 0 20px;
 `;
 
 export const Inner = styled.div`
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 900px;
   margin: auto;
+  justify-content: center;
   video {
     height: 100%;
     width: 100%;
@@ -27,33 +28,16 @@ export const Inner = styled.div`
 `;
 
 export const Close = styled.button`
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 22px;
-  height: 22px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
   opacity: 0.3;
+  text-color: white;
   background-color: transparent;
   border: 0;
   cursor: pointer;
   &:hover {
     opacity: 1;
-  }
-  &:before,
-  &:after {
-    position: absolute;
-    left: 10px;
-    top: 0;
-    content: " ";
-    height: 22px;
-    width: 2px;
-    background-color: #333;
-  }
-  &:before {
-    transform: rotate(45deg);
-  }
-  &:after {
-    transform: rotate(-45deg);
   }
 `;
 
@@ -96,3 +80,5 @@ export const HeaderButton = styled.button`
     color: white;
   }
 `;
+
+

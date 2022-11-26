@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 export function FooterContainer() {
   return (
     <Footer>
-      <Footer.Title>Questions? Contact us.</Footer.Title>
+      <Footer.Title><Footer.Link href="https://portfolio.sarkardev.online">Questions? Contact us.</Footer.Link></Footer.Title>
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
@@ -12,11 +12,11 @@ export function FooterContainer() {
           <Footer.Link href="#">Investor Relations</Footer.Link>
           <Footer.Link href="#">Ways to Watch</Footer.Link>
           <Footer.Link href="#">Corporate Information</Footer.Link>
-          <Footer.Link href="#">Netflix Originals</Footer.Link>
+          <Footer.Link href="#">Valflix Originals</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Help Centre</Footer.Link>
+          <Footer.Link href="#">Help Center</Footer.Link>
           <Footer.Link href="#">Jobs</Footer.Link>
           <Footer.Link href="#">Terms of Use</Footer.Link>
           <Footer.Link href="#">Contact Us</Footer.Link>
@@ -37,7 +37,7 @@ export function FooterContainer() {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>ValFlix Inc. Japan</Footer.Text>
+      <Footer.Text>ValFlix Inc. Pvt.</Footer.Text>
     </Footer>
   );
 }

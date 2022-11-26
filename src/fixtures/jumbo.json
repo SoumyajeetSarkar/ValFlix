@@ -1,26 +1,26 @@
 [
     {
       "id": 1,
-      "title": "Enjoy on your TV.",
-      "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-      "image": "/images/misc/home-tv.jpg",
-      "alt": "Tiger King on Netflix",
+      "title": "Enjoy all your favourite valorant content.",
+      "subTitle": "A large variety of valorant gameplays and funny content from your favourite teams and pro players.",
+      "image": "/images/misc/content.jpg",
+      "alt": "valorant content",
       "direction": "row"
     },
     {
       "id": 2,
-      "title": "Download your programmes to watch on the go.",
-      "subTitle": "Save your data and watch all your favourites offline.",
-      "image": "/images/misc/home-mobile.jpg",
-      "alt": "Watch on mobile",
+      "title": "Watch what's new in the community today!",
+      "subTitle": "All the latest gossip, strats, molly lineups, shock darts and more content related to your favourite agent.",
+      "image": "/images/misc/agent.webp",
+      "alt": "twitch today",
       "direction": "row-reverse"
     },
     {
       "id": 3,
-      "title": "Watch everywhere.",
-      "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
-      "image": "/images/misc/home-imac.jpg",
-      "alt": "Money Heist on Netflix",
+      "title": "Watch Tournaments live or later.",
+      "subTitle": "You can watch all your favourite valorant professional matches which you've missed right here. ",
+      "image": "/images/misc/vct.jpg",
+      "alt": "vct",
       "direction": "row"
     }
   ]

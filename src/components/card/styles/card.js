@@ -67,6 +67,7 @@ export const Meta = styled.div`
   bottom: 0;
   padding: 10px;
   background-color: #0000008f;
+  width:100%;
 `;
 
 export const Image = styled.img`
@@ -150,20 +151,15 @@ export const FeatureTitle = styled(Title)`
 `;
 
 export const FeatureClose = styled.button`
-  color: white;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: static;
+  padding-bottom: 500px;
   cursor: pointer;
   background-color: transparent;
   border: 0;
-  img {
-    filter: brightness(0) invert(1);
-    width: 24px;
-  }
 `;
 
 export const Content = styled.div`
+  position: static;
   margin: 56px;
   max-width: 500px;
   line-height: normal;
@@ -171,17 +167,4 @@ export const Content = styled.div`
     margin: 30px;
     max-width: none;
   }
-`;
-
-export const Maturity = styled.div`
-  background-color: ${({ rating }) => (rating >= 15 ? '#f44336' : '#2f9600')};
-  border-radius: 15px;
-  width: 28px;
-  line-height: 28px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-right: 10px;
-  font-size: 12px;
 `;
