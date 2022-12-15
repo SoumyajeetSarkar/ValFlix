@@ -5,7 +5,7 @@ import { useEffect } from "react";
 //import 'firebase/auth';
 //import {seedDatabase} from "../seed";
 const firebaseConfig = {
-    apiKey: "AIzaSyDE8S3srOFqAPzwYNs5nmjjsLVW7UYAMGU",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "valflix-4edf8.firebaseapp.com",
     projectId: "valflix-4edf8",
     storageBucket: "valflix-4edf8.appspot.com",
