@@ -4,7 +4,6 @@ import { HeaderContainer } from "../container-functions/header";
 import Feature from "../components/feature";
 import OptForm from "../components/opt-form"
 import Jumbo from "../container-functions/jumbo";
-
 export default function Home() {
   return (
     <>
@@ -17,7 +16,7 @@ export default function Home() {
             Watch anywhere. Cancel at any time.
           </Feature.SubTitle>
           <OptForm>
-            <OptForm.Button>Try it now</OptForm.Button>
+            <OptForm.Button route="/signup">Try it now</OptForm.Button>
             <OptForm.Break />
              <OptForm.Text>
               Ready to watch? Click to create an account and jump into the magical universe of valorant.

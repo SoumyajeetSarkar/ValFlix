@@ -1,6 +1,7 @@
-import React from 'react';
-import { Container, Input, Break, Button, Text } from './styles/opt-form';
-import {FaChevronRight} from "react-icons/fa";
+import React from "react";
+import { Container, Input, Break, Button, Text } from "./styles/opt-form";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function OptForm({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
@@ -11,9 +12,14 @@ OptForm.Input = function OptFormInput({ ...restProps }) {
 
 OptForm.Button = function OptFormButton({ children, ...restProps }) {
   return (
-    <Button {...restProps}>
-      {children} <FaChevronRight/>
-    </Button>
+    <Link
+      to={restProps.route}
+      style={{ textDecoration: "none", color: "white" }}
+    >
+      <Button {...restProps}>
+        {children} <FaChevronRight />
+      </Button>
+    </Link>
   );
 };
 

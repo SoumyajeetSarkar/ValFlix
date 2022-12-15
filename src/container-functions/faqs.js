@@ -17,7 +17,7 @@ export function FaqsContainer() {
         ))}
       </Accordion.Frame>
       <OptForm>
-        <OptForm.Button>Try it now</OptForm.Button>
+        <OptForm.Button route="/signup">Try it now</OptForm.Button>
         <OptForm.Break />
         <OptForm.Text>
           Ready to watch? Click to create an account and jump into the magical
